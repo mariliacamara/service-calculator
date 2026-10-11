@@ -97,7 +97,6 @@ button { cursor: pointer; }
 .hero-intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .hero-intro h1 {
@@ -312,9 +311,6 @@ h1 {
 
 .summary-section {
   margin-top: 24px;
-  display: grid;
-  gap: 16px;
-  grid-template-columns: 1.4fr .6fr;
 }
 
 .summary-grid {
@@ -465,7 +461,7 @@ h1 {
 }
 
 @media (max-width: 920px) {
-  .summary-section, .footer-grid {
+  .footer-grid {
     grid-template-columns: 1fr;
   }
 }
