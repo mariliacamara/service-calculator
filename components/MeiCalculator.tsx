@@ -105,7 +105,6 @@ export default function MeiCalculator() {
       <div className="header">
         <div className="container header-inner">
           <div className="brand">
-            <div className="brand-badge">M</div>
             <span>Calculadora MEI</span>
           </div>
           <div className="header-pill">Simulação rápida</div>
@@ -134,6 +133,18 @@ export default function MeiCalculator() {
                   text="Use presets prontos para serviço, transporte e personalizado."
                 />
               </div>
+
+              <section className="sidebar-card" style={{ marginTop: 10 }}>
+                <h2>Como usar</h2>
+                <p>1. Escolha se quer calcular o bruto ou o líquido.</p>
+                <p>2. Digite o valor e escolha o tipo de atividade, ou ajuste manualmente.</p>
+                <p>3. Veja o resultado e copie.</p>
+                <div className="divider" />
+                <div className="small">
+                  Mudar o slider de isenção ou alíquota troca o tipo de atividade para
+                  &quot;Personalizado&quot; automaticamente.
+                </div>
+              </section>
             </div>
 
             <section className="card">
@@ -340,20 +351,6 @@ export default function MeiCalculator() {
               <div>Valor bruto × (1 − parcela isenta) × alíquota = imposto estimado.</div>
             </div>
           </section>
-
-          <aside>
-            <section className="sidebar-card">
-              <h2>Como usar</h2>
-              <p>1. Escolha se quer calcular o bruto ou o líquido.</p>
-              <p>2. Digite o valor e escolha o tipo de atividade, ou ajuste manualmente.</p>
-              <p>3. Veja o resultado e copie.</p>
-              <div className="divider" />
-              <div className="small">
-                Mudar o slider de isenção ou alíquota troca o tipo de atividade para
-                &quot;Personalizado&quot; automaticamente.
-              </div>
-            </section>
-          </aside>
         </section>
 
         <footer className="footer">
@@ -368,6 +365,12 @@ export default function MeiCalculator() {
               <strong>Aviso</strong>
               Os percentuais podem variar conforme atividade, tributação e renda anual.
             </div>
+          </div>
+          <div className="footer-credit">
+            <a href="https://camorim.dev.br" target="_blank" rel="noopener noreferrer">
+              Camorim Tech
+            </a>{" "}
+            © {new Date().getFullYear()}
           </div>
         </footer>
       </main>
