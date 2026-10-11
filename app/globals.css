@@ -91,7 +91,13 @@ button { cursor: pointer; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-intro h1 {
