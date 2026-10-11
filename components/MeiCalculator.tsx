@@ -105,7 +105,6 @@ export default function MeiCalculator() {
       <div className="header">
         <div className="container header-inner">
           <div className="brand">
-            <div className="brand-badge">M</div>
             <span>Calculadora MEI</span>
           </div>
           <div className="header-pill">Simulação rápida</div>
@@ -366,6 +365,12 @@ export default function MeiCalculator() {
               <strong>Aviso</strong>
               Os percentuais podem variar conforme atividade, tributação e renda anual.
             </div>
+          </div>
+          <div className="footer-credit">
+            <a href="https://camorim.dev.br" target="_blank" rel="noopener noreferrer">
+              Camorim Tech
+            </a>{" "}
+            © {new Date().getFullYear()}
           </div>
         </footer>
       </main>
