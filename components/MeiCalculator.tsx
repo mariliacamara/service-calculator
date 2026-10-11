@@ -114,26 +114,29 @@ export default function MeiCalculator() {
 
       <main className="container">
         <section className="hero">
-          <div className="kicker">Ferramenta de precificação</div>
-          <h1>Quanto cobrar para sobrar o valor certo.</h1>
-          <p className="hero-copy">
-            Escolha se você já sabe o líquido que quer receber ou o valor que vai cobrar, e veja o
-            outro lado da conta na hora.
-          </p>
+          <div className="hero-grid">
+            <div className="hero-intro">
+              <div className="kicker">Ferramenta de precificação</div>
+              <h1>Quanto cobrar para sobrar o valor certo.</h1>
+              <p className="hero-copy">
+                Escolha se você já sabe o líquido que quer receber ou o valor que vai cobrar, e veja
+                o outro lado da conta na hora.
+              </p>
 
-          <div className="feature-grid">
-            <FeatureCard
-              title="Clareza"
-              text="Veja exatamente o que é isento, tributável e quanto sobra no final."
-            />
-            <FeatureCard title="Dois sentidos" text="Calcule o bruto a partir do líquido, ou o líquido a partir do bruto." />
-            <FeatureCard
-              title="Prático"
-              text="Use presets prontos para serviço, transporte e personalizado."
-            />
-          </div>
+              <div className="feature-grid">
+                <FeatureCard
+                  title="Clareza"
+                  text="Veja exatamente o que é isento, tributável e quanto sobra no final."
+                />
+                <FeatureCard title="Dois sentidos" text="Calcule o bruto a partir do líquido, ou o líquido a partir do bruto." />
+                <FeatureCard
+                  title="Prático"
+                  text="Use presets prontos para serviço, transporte e personalizado."
+                />
+              </div>
+            </div>
 
-          <section className="card">
+            <section className="card">
             <div className="mode-switch" role="tablist" aria-label="Modo de cálculo">
               <button
                 type="button"
@@ -288,10 +291,11 @@ export default function MeiCalculator() {
               {copied ? "Copiado" : "Copiar resultado"}
             </button>
           </section>
+          </div>
         </section>
 
         <section className="summary-section">
-          <section className="card" style={{ marginTop: 0 }}>
+          <section className="card">
             <p className="result-tagline" style={{ marginBottom: 4 }}>
               Detalhamento do cálculo
             </p>
